@@ -4,10 +4,17 @@
 # from the command line.  Prints out the Casesar Cipher.
 #
 # 20170202	GH	Created
+# 20170202	GH	Add check for valid key
 #
 
 plain_text = ARGV[0].chars
 shift_key = ARGV[1].to_i
+
+
+if shift_key < 1 
+	puts "Please enter a key greater than 0."
+	exit
+end
 
 a_lowercase_ord = "a".ord
 z_lowercase_ord = "z".ord
