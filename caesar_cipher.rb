@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+#
 # caesar_cipher.rb
 #
 # Simple cipher. Takes a string and shift distance as parameters
