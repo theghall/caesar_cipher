@@ -1,8 +1,9 @@
-This is a simple cipher program.  It takes a phrase and "shifts" all
-the letters right by a set key.
+Implements the Casesar Cipher in the class CaesarCipher.
 
-If the phrase is "An ant" and the key is 3, the cipher is: Dq dqw.
+An object of CaesarCipher is instantiated with the following hash:
+:phrase => &lt;string&gt;, :key => &lt;n&gt; 
 
-To use type the following at the command prompt; key is a positive integer:
-
-$ ./caesar_chiper text_to_encyrpt key
+where n is a number greater than 0.  An empty string is not encoded
+and using a key of 0 will simply return the given phrase.  
+One note: passing a key of 26 will give you the same phrase back due
+to the wraparound.
