@@ -1,7 +1,6 @@
 # caesar_chiper_spec.rb
 #
 require 'caesar_cipher'
-require 'byebug'
 
 describe CaesarCipher do
 
